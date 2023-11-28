@@ -8,7 +8,7 @@ public with sharing class Calculator {
     public Calculator() {
     }
     public integer sub(integer c, integer d){
-        return c-d;
+        return d-c;
     }
    
     public integer add(integer a, integer b){
