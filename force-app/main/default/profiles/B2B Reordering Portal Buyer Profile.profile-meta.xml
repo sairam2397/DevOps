@@ -6,8 +6,35 @@
         <field>Certification__c.Date_of_Completion__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Certification__c.Result__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>test__c.Description__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>test__c.Test_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Account_Update</flow>
+    </flowAccesses>
     <layoutAssignments>
         <layout>Certification__c-Certification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Certification__c-Certification Layout</layout>
+        <recordType>Certification__c.Admin</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Certification__c-Certification Layout</layout>
+        <recordType>Certification__c.User</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>student__c-student Layout</layout>
@@ -15,6 +42,24 @@
     <layoutAssignments>
         <layout>test__c-Test Layout</layout>
     </layoutAssignments>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Certification__c.Admin</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Certification__c.User</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Certification__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>student__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>test__c</tab>
         <visibility>DefaultOn</visibility>
